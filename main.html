@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Center Item with Flexbox</title>
-  <style>
-    /* Apply styling to the holder to make it full viewport width and height */
-    body, html {
-      height: 100%;
-      margin: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Item in Center</title>
+    <style>
+        .holder{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
-    .holder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; /* Make the holder take full viewport height */
+    .item-1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: flex;
     }
-    .item-1 {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-    }
-  </style>
+
+    </style>
 </head>
 <body>
-  <div class="holder">
-    <div class="item-1"></div>
-  </div>
+    <div class="holder">
+        <div class="item item-1">
+            Place me in center using flex
+        </div>
+    </div>
+    
 </body>
 </html>
